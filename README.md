@@ -1,15 +1,18 @@
-<div align="center"> 
-<h1 align="center">Bilibili助手</h1>
-<img src="https://img.shields.io/github/issues/srcrs/BilibiliTask?color=green">
-<img src="https://img.shields.io/github/stars/srcrs/BilibiliTask?color=yellow">
-<img src="https://img.shields.io/github/forks/srcrs/BilibiliTask?color=orange">
-<img src="https://img.shields.io/github/license/srcrs/BilibiliTask?color=ff69b4">
-<img src="https://img.shields.io/github/search/srcrs/BilibiliTask/main?color=blue">
-<img src="https://img.shields.io/github/v/release/srcrs/BilibiliTask?color=blueviolet">
-<img src="https://img.shields.io/github/languages/code-size/srcrs/BilibiliTask?color=critical">
-</div>
+# Bilibili助手
 
-# 简介
+![issues](https://img.shields.io/github/issues/srcrs/BilibiliTask?color=green)
+![stars](https://img.shields.io/github/stars/srcrs/BilibiliTask?color=yellow)
+![forks](https://img.shields.io/github/forks/srcrs/BilibiliTask?color=orange)
+![license](https://img.shields.io/github/license/srcrs/BilibiliTask?color=ff69b4)
+![search](https://img.shields.io/github/search/srcrs/BilibiliTask/main?color=blue)
+![release](https://img.shields.io/github/v/release/srcrs/BilibiliTask?color=blueviolet)
+![code-size](https://img.shields.io/github/languages/code-size/srcrs/BilibiliTask?color=critical)
+
+[![BCH compliance](https://bettercodehub.com/edge/badge/qq523407234/BilibiliTask?branch=main)](https://bettercodehub.com/)
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/c5c43a75c6f744e1af0145e7f3efbc8b)](https://www.codacy.com/gh/qq523407234/BilibiliTask/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=qq523407234/BilibiliTask&amp;utm_campaign=Badge_Grade)
+[![Build & Test](https://dev.azure.com/qq523407234/Azure%20Pipelines/_apis/build/status/qq523407234.BilibiliTask)](https://dev.azure.com/qq523407234/Azure%20Pipelines/_build/latest?definitionId=1)
+
+## 简介
 
 👯✨😄📫
 
@@ -20,40 +23,56 @@
 
 重要提示，如果收到了`b`站的账号安全通知，可以考虑将`Actions`禁用一段时间，观望一段时间再进行使用，具体禁用步骤，请参考此[Issues](https://github.com/srcrs/BilibiliTask/issues/78)。
 
-# 功能
+## 功能
 
-* [x] 自动获取经验(投币、点赞、分享视频) 
-* [x] 直播辅助(直播签到，自动送出即将过期的礼物) 
-* [x] 自动兑换银瓜子为硬币 
-* [x] 自动领取年度大会员每月权益(每月`1`号领取`B`币劵、权益礼包) 
-* [x] 月底自动用B币卷给自己充电(每月`28`号)
-* [x] 月底自动用B币卷兑换金瓜子(每月`28`号)
-* [x] 漫画辅助脚本(漫画`APP`签到) 
-* [x] 支持功能自定义(自定义投币数量，银瓜子兑换硬币开关等)
-* [x] 账户失效提醒(发送到你的微信或者钉钉提醒、邮箱提醒)
-* [x] 支持多种方式推送运行结果(钉钉、微信)
+- [x] 自动获取经验(投币、点赞、分享视频)  
+- [x] 直播辅助(直播签到，自动送出即将过期的礼物)  
+- [x] 自动兑换银瓜子为硬币  
+- [x] 自动领取年度大会员每月权益(每月`1`号领取`B`币劵、权益礼包)  
+- [x] 月底自动用B币卷给自己充电(每月`28`号)
+- [x] 月底自动用B币卷兑换金瓜子(每月`28`号)
+- [x] 漫画辅助脚本(漫画`APP`签到)  
+- [x] 支持功能自定义(自定义投币数量，银瓜子兑换硬币开关等)
+- [x] 账户失效提醒(发送到你的微信或者钉钉提醒、邮箱提醒)
+- [x] 支持多种方式推送运行结果(钉钉、微信)
 
-# 目录
+## 目录
 
-- [简介](#简介)
-- [功能](#功能)
-- [目录](#目录)
-- [使用方法](#使用方法)
-  - [1.fork本项目](#1fork本项目)
-  - [2.准备需要的参数](#2准备需要的参数)
-  - [3.将获取到参数填到Secrets](#3将获取到参数填到secrets)
-  - [4.开启actions](#4开启actions)
-  - [5.进行一次push操作](#5进行一次push操作)
-- [进阶使用](#进阶使用)
-  - [1.配置文件说明](#1配置文件说明)
-  - [2.推送运行结果到微信](#2推送运行结果到微信)
-  - [3.推送运行结果到钉钉](#3推送运行结果到钉钉)
-  - [4.自定义程序运行时间](#4自定义程序运行时间)
-- [如何拉取最新代码](#如何拉取最新代码)
-  - [方法一](#方法一)
-  - [方法二](#方法二)
-- [更新日志](#更新日志)
-- [参考项目](#参考项目)
+- [Bilibili助手](#bilibili助手)
+  - [简介](#简介)
+  - [功能](#功能)
+  - [目录](#目录)
+  - [使用方法](#使用方法)
+    - [1.fork本项目](#1fork本项目)
+    - [2.准备需要的参数](#2准备需要的参数)
+    - [3.将获取到参数填到Secrets](#3将获取到参数填到secrets)
+    - [4.开启actions](#4开启actions)
+    - [5.进行一次push操作](#5进行一次push操作)
+  - [进阶使用](#进阶使用)
+    - [1.配置文件说明](#1配置文件说明)
+    - [2.推送运行结果到微信](#2推送运行结果到微信)
+      - [使用`server`酱将程序运行结果推送到微信](#使用server酱将程序运行结果推送到微信)
+      - [使用`push+`推送运行结果到微信](#使用push推送运行结果到微信)
+    - [3.推送运行结果到钉钉](#3推送运行结果到钉钉)
+    - [4.自定义程序运行时间](#4自定义程序运行时间)
+  - [如何拉取最新代码](#如何拉取最新代码)
+    - [方法一](#方法一)
+    - [方法二](#方法二)
+  - [更新日志](#更新日志)
+    - [2020-11-28](#2020-11-28)
+    - [2020-11-22](#2020-11-22)
+    - [2020-11-17](#2020-11-17)
+    - [2020-11-05](#2020-11-05)
+    - [2020-11-03](#2020-11-03)
+    - [2020-10-22](#2020-10-22)
+    - [2020-10-19](#2020-10-19)
+    - [2020-10-17](#2020-10-17)
+    - [2020-10-13](#2020-10-13)
+    - [2020-10-08](#2020-10-08)
+    - [2020-10-07](#2020-10-07)
+    - [2020-10-06](#2020-10-06)
+    - [2020-10-05](#2020-10-05)
+  - [参考项目](#参考项目)
 
 关于日志中的 ✔ 和 ❌ 说明
 
@@ -62,13 +81,13 @@
 ✔ | 本次程序运行，成功的执行了代码，并完成了任务(例如，分享视频，今日未分享过，那么程序就应该请求分享视频的接口，协助完成分享视频的任务)。
 ❌ | 可能两种操作会出现这个符号。1.程序成功的执行了，尝试去完成任务，但是中途遇到了未知的失败。2.程序成功的执行了，检测到此类任务已经完成(例如，分享视频，今日已经分享过，那么程序不应该请求分享视频的接口，无需协助完成分享视频的任务)，就无需再去完成。可以理解为跳过或遇到错误。
 
-# 使用方法
+## 使用方法
 
-## 1.fork本项目
+### 1.fork本项目
 
 项目地址：[srcrs/BilibiliTask](https://github.com/srcrs/BilibiliTask)
 
-## 2.准备需要的参数
+### 2.准备需要的参数
 
 本项目成功运行需要三个参数，分别是`SESSDATA`，`bili_jct`，`DedeUserID`
 
@@ -76,9 +95,9 @@
 
 - 找到所需要参数对应的数据，找不到可能是你的账号没有登录。
 
-![](img/获取Cookie.png)
+![获取Cookie](img/获取Cookie.png)
 
-## 3.将获取到参数填到Secrets
+### 3.将获取到参数填到Secrets
 
 在`Secrets`中的`Name`和`Value`格式如下：
 
@@ -90,29 +109,29 @@ SESSDATA | xxxxx
 
 将上一步获取的参数，填入到Secrets中，一共需要添加三个键值对。
 
-![](img/添加Secrets.png)
+![添加Secrets](img/添加Secrets.png)
 
-## 4.开启actions
+### 4.开启actions
 
 默认`actions`处于禁止状态，在`Actions`选项中开启`Actions`功能，把那个绿色的长按钮点一下。如果看到左侧工作流上有黄色`!`号，还需继续开启。
 
-![](img/开启actions.gif)
+![开启actions](img/开启actions.gif)
 
-## 5.进行一次push操作
+### 5.进行一次push操作
 
 默认`push`操作会触发工作流运行。
 
-+ 打开`README.md`，将里面的 😄 删除一个即可。
+- 打开`README.md`，将里面的 😄 删除一个即可。
 
-![](img/进行一次push操作.gif)
+![进行一次push操作](img/进行一次push操作.gif)
 
-+ 查看`actions`，显示对勾就说明运行成功了。以后会在每天的`10：30`执行，自动完成每日任务。
+- 查看`actions`，显示对勾就说明运行成功了。以后会在每天的`10：30`执行，自动完成每日任务。
 
-![](img/运行结果.gif)
+![运行结果](img/运行结果.gif)
 
-# 进阶使用
+## 进阶使用
 
-## 1.配置文件说明
+### 1.配置文件说明
 
 配置文件的位置在`src/main/resource/config.yml`。
 
@@ -158,15 +177,15 @@ selectLike: 0
 
 如实在没有想给他投币的up主，可以考虑把我填上哦 `477137547` 😄
 
-## 2.推送运行结果到微信
+### 2.推送运行结果到微信
 
-### 使用`server`酱将程序运行结果推送到微信。
+#### 使用`server`酱将程序运行结果推送到微信
 
 `server`酱官网：`http://sc.ftqq.com`
 
-+ 按照`server`酱官网使用教程，用`github`登录并绑定微信。
+- 按照`server`酱官网使用教程，用`github`登录并绑定微信。
 
-+ 获得`SCKEY`并将其填入到`Secrets`中。
+- 获得`SCKEY`并将其填入到`Secrets`中。
 
 在`Secrets`中的`Name`和`Value`格式如下：
 
@@ -176,15 +195,15 @@ SCKEY | xxxxx
 
 这样就可以在微信接收到运行结果了。
 
-![](img/server酱推送的结果.jpg)
+![server酱推送的结果](img/server酱推送的结果.jpg)
 
-### 使用`push+`推送运行结果到微信
+#### 使用`push+`推送运行结果到微信
 
-`push+`官网：`https://pushplus.hxtrip.com`
+`push+`官网：<https://pushplus.hxtrip.com>
 
-+ 进入官网首页点击`一对一推送`，用微信扫描其二维码，进行关注
+- 进入官网首页点击`一对一推送`，用微信扫描其二维码，进行关注
 
-+ 关注后，即可看到`token`，将其添加到`Secrets`中即可
+- 关注后，即可看到`token`，将其添加到`Secrets`中即可
 
 在`Secrets`中的`Name`和`Value`格式如下：
 
@@ -192,38 +211,38 @@ Name | Value
 -|-
 PUSHPLUSTK | xxxxx
 
-## 3.推送运行结果到钉钉
+### 3.推送运行结果到钉钉
 
 1.首先，你需要在钉钉创建一个群聊，可以拉去两个人创建一个，再把他们踢出去。
 
 2.获取钉钉自定义机器人的`Webhook`，将其填写到`Secrets`中
 
-键值对如下格式: 
+键值对如下格式:
 
 Name | Value
 -|-
-DINGTALK | https://oapi.dingtalk.com/robot/send?access_token=064559acaa666c43d5ba197656594f288f3acef9a64f4f43218beddd1c7b7050
+DINGTALK | `https://oapi.dingtalk.com/robot/send?access_token=064559acaa666c43d5ba197656594f288f3acef9a64f4f43218beddd1c7b7050`
 
-![](img/获取钉钉Webhook.gif)
+![获取钉钉Webhook](img/获取钉钉Webhook.gif)
 
-## 4.自定义程序运行时间
+### 4.自定义程序运行时间
 
 在`.github/workflows/Bilibili.yml`修改`cron`表达式，需要注意的是，`cron`表达式是国际时间，
 需要换算到国内时间，往后推8个小时，例如国际时间是12点钟，则在国内是20点钟。
 
-![](img/自定义程序运行时间.png)
+![自定义程序运行时间](img/自定义程序运行时间.png)
 
-# 如何拉取最新代码
+## 如何拉取最新代码
 
-## 方法一
+### 方法一
 
 在`github`安装`pull`，会自动帮你检测上游仓库，并帮助你更新代码
 
-地址在这: https://github.com/apps/pull
+地址在这: <https://github.com/apps/pull>
 
 由于添加有配置文件`config.yml`，有可能会覆盖你自定义的`config.yml`，需要注意。
 
-## 方法二
+### 方法二
 
 1、查看是否有源头仓库的别名和地址
 
@@ -252,122 +271,122 @@ git pull upstream main
 4、将更新后的代码推送到你的仓库
 
 ```sh
-git push origin main 
+git push origin main
 ```
 
 由于添加有配置文件`config.yml`，有可能会覆盖你自定义的`config.yml`，需要注意。
 
-# 更新日志
+## 更新日志
 
-## 2020-12-07
+### 2020-12-07
 
-+ 发布1.0.8版本
+- 发布1.0.8版本
 
-+ 修复用户无动态获取视频信息错误
+- 修复用户无动态获取视频信息错误
 
-+ 修复从动态列表中获取到自己投稿视频的错误
+- 修复从动态列表中获取到自己投稿视频的错误
 
-+ 增加一些自定义配置点赞
+- 增加一些自定义配置点赞
 
-## 2020-11-28
+### 2020-11-28
 
-+ 去除UA(貌似是没有影响的)
+- 去除UA(貌似是没有影响的)
 
-+ 设置API请求间的缓冲时间(5 秒钟)
+- 设置API请求间的缓冲时间(5 秒钟)
 
-## 2020-11-22
+### 2020-11-22
 
 感谢[东酱](https://github.com/qq523407234)在此项目中做出的巨大贡献。
 
-+ 增加`push+`推送方式
+- 增加`push+`推送方式
 
-+ 将项目管理工具改为`gradle`
+- 将项目管理工具改为`gradle`
 
-+ 优化代码结构，优化日志输出格式(高亮)
+- 优化代码结构，优化日志输出格式(高亮)
 
-## 2020-11-17
+### 2020-11-17
 
-+ 增加钉钉推送方式
+- 增加钉钉推送方式
 
-+ 优化投币给视频的策略 , 自定义`up`主视频 > 当前用户动态列表中的视频投稿 > 随机视频列表
+- 优化投币给视频的策略 , 自定义`up`主视频 > 当前用户动态列表中的视频投稿 > 随机视频列表
 
-+ 投币后等待`1-2`秒钟 , 降低访问投币`API`的速度
+- 投币后等待`1-2`秒钟 , 降低访问投币`API`的速度
 
-+ 优化模拟观看视频 , 获取视频时常，随机上报视频观看进度
+- 优化模拟观看视频 , 获取视频时常，随机上报视频观看进度
 
-+ 优化日志输出，提示更加友好，更加贴近用户(如增加了还剩多少天升级的提示)
+- 优化日志输出，提示更加友好，更加贴近用户(如增加了还剩多少天升级的提示)
 
-+ 增加账号失效提醒(发送到微信或者钉钉)
+- 增加账号失效提醒(发送到微信或者钉钉)
 
-## 2020-11-05
+### 2020-11-05
 
-+ 根据阿里巴巴代码规范优化代码
+- 根据阿里巴巴代码规范优化代码
 
-+ 增加用户标识配置项
+- 增加用户标识配置项
 
-## 2020-11-03
+### 2020-11-03
 
-+ 将自动使用B币卷开关，更改为自动配置用途，可以选择不使用、充电、兑换金瓜子。
+- 将自动使用B币卷开关，更改为自动配置用途，可以选择不使用、充电、兑换金瓜子。
 
-+ 增加B币卷兑换金瓜子功能
+- 增加B币卷兑换金瓜子功能
 
-## 2020-10-22
+### 2020-10-22
 
-+ 增加用server酱推送运行结果到微信功能
+- 增加用server酱推送运行结果到微信功能
 
-## 2020-10-19
+### 2020-10-19
 
-+ 增加年度大会员每月`1`号领取`B`币卷
+- 增加年度大会员每月`1`号领取`B`币卷
 
-+ 月底自动用`B`币卷给自己充电
+- 月底自动用`B`币卷给自己充电
 
-+ 在配置项中添加是否月底用`B`币卷给自己充电开关，默认开启
+- 在配置项中添加是否月底用`B`币卷给自己充电开关，默认开启
 
 由于我本身不是年度大会员，无法测试是否可以正常领取年度大会员权益和`B`币卷，
 出错的时候麻烦给我提一个`issues`，我会及时解决的。
 
-## 2020-10-17
+### 2020-10-17
 
-+ 优化日志显示
+- 优化日志显示
 
-+ 增加账户失效提醒
+- 增加账户失效提醒
 
 账户失效会导致任务流运行失败，github会下发运行失败邮件提醒。
 
-## 2020-10-13
+### 2020-10-13
 
-+ 重构代码，功能不变
+- 重构代码，功能不变
 
-+ 采用反射实现自动加载`task`包功能任务代码。
+- 采用反射实现自动加载`task`包功能任务代码。
 
-+ 加入配置文件，用户可自定义一些配置
+- 加入配置文件，用户可自定义一些配置
 
-## 2020-10-08
+### 2020-10-08
 
-+ 增加自动送出即将过期的礼物
+- 增加自动送出即将过期的礼物
 
-+ 增加漫画`APP`签到
+- 增加漫画`APP`签到
 
-+ 增加一些`api`
+- 增加一些`api`
 
-## 2020-10-07
+### 2020-10-07
 
-+ 增添银瓜子自动兑换硬币功能
+- 增添银瓜子自动兑换硬币功能
 
-## 2020-10-06
+### 2020-10-06
 
-+ 增添B站直播签到
+- 增添B站直播签到
 
-+ 继续增添`API`
+- 继续增添`API`
 
-## 2020-10-05
+### 2020-10-05
 
-+ 完成了自动获取经验功能
+- 完成了自动获取经验功能
 
 每日登录、每日观看视频、每日投币、每日分享
 
-+ 完善对接`api`接口
+- 完善对接`api`接口
 
-# 参考项目
+## 参考项目
 
 [happy888888/BiliExp](https://github.com/happy888888/BiliExp)

@@ -50,8 +50,8 @@ public class UserData {
     /** B币卷余额 */
     private Integer couponBalance;
     /** 当前等级 */
-    private String currentLevel;
+    private Integer currentLevel;
     /** 距离升级到下一级所需要的经验 */
-    private String nextExp;
+    private Integer nextExp;
 
 }
