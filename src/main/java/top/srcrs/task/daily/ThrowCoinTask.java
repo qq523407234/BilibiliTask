@@ -186,8 +186,8 @@ public class ThrowCoinTask implements Task {
         if(success.equals(dynamic.getString(key))){
             JSONArray cards = dynamic.getJSONObject("data").getJSONArray("cards");
             // 没有任何动态，则不会有 cards 数组
-            if(cards==null){
-                return new ArrayList<>();
+            if (cards == null) {
+                return videoAid;
             }
             for(Object object : cards){
                 JSONObject card = (JSONObject) object;

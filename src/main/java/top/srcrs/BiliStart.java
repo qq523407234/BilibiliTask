@@ -40,11 +40,12 @@ public class BiliStart {
             log.info("【用户名】: {}",StringUtil.hideString(USER_DATA.getUname(),1,1,'*'));
             log.info("【硬币】: {}", USER_DATA.getMoney());
             log.info("【经验】: {}", USER_DATA.getCurrentExp());
+            log.info("【等级】: {}",USER_DATA.getCurrentLevel());
             /* 动态执行task包下的所有java代码 */
             scanTask();
             /* 当用户等级为Lv6时，升级到下一级 next_exp 值为 -- 代表无穷大 */
-            String maxLevel = "6";
-            if(maxLevel.equals(USER_DATA.getCurrentLevel())){
+            int maxLevel = 6;
+            if(maxLevel == USER_DATA.getCurrentLevel()){
                 log.info("【升级预计】: 当前等级为: Lv{} ,已经是最高等级", maxLevel);
                 log.info("【温馨提示】: 可在配置文件中关闭每日投币操作");
             } else{
@@ -150,9 +151,9 @@ public class BiliStart {
             /* 钱包B币卷余额 */
             USER_DATA.setCouponBalance(object.getJSONObject("wallet").getIntValue("coupon_balance"));
             /* 升级到下一级所需要的经验 */
-            USER_DATA.setNextExp(levelInfo.getString("next_exp"));
+            USER_DATA.setNextExp(levelInfo.getIntValue("next_exp"));
             /* 获取当前的等级 */
-            USER_DATA.setCurrentLevel(levelInfo.getString("current_level"));
+            USER_DATA.setCurrentLevel(levelInfo.getIntValue("current_level"));
             return true;
         }
         if(NOT_LOGGED_IN.equals(code)){
@@ -173,7 +174,7 @@ public class BiliStart {
         /* 当前经验数 */
         int currentExp = USER_DATA.getCurrentExp();
         /* 到达下一级所需要的经验数 */
-        int nextExp = Integer.parseInt(USER_DATA.getNextExp());
+        int nextExp = USER_DATA.getNextExp();
         /* 获取当前硬币数量 */
         int num1 = USER_DATA.getMoney().intValue();
         /* 获取配置中每日投币数量 */
