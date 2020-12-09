@@ -1,3 +1,4 @@
+
 # Bilibili助手
 
 ![issues](https://img.shields.io/github/issues/srcrs/BilibiliTask?color=green)
@@ -8,6 +9,7 @@
 ![release](https://img.shields.io/github/v/release/srcrs/BilibiliTask?color=blueviolet)
 ![code-size](https://img.shields.io/github/languages/code-size/srcrs/BilibiliTask?color=critical)
 
+[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/qq523407234/BilibiliTask)
 [![BCH compliance](https://bettercodehub.com/edge/badge/qq523407234/BilibiliTask?branch=main)](https://bettercodehub.com/)
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/c5c43a75c6f744e1af0145e7f3efbc8b)](https://www.codacy.com/gh/qq523407234/BilibiliTask/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=qq523407234/BilibiliTask&amp;utm_campaign=Badge_Grade)
 [![Build & Test](https://dev.azure.com/qq523407234/Azure%20Pipelines/_apis/build/status/qq523407234.BilibiliTask)](https://dev.azure.com/qq523407234/Azure%20Pipelines/_build/latest?definitionId=1)
