@@ -62,10 +62,10 @@
 
 关于日志中的 ✔ 和 ❌ 说明
 
-符号 | 说明
--|-
-✔ | 本次程序运行，成功的执行了代码，并完成了任务(例如，分享视频，今日未分享过，那么程序就应该请求分享视频的接口，协助完成分享视频的任务)。
-❌ | 可能两种操作会出现这个符号。1.程序成功的执行了，尝试去完成任务，但是中途遇到了未知的失败。2.程序成功的执行了，检测到此类任务已经完成(例如，分享视频，今日已经分享过，那么程序不应该请求分享视频的接口，无需协助完成分享视频的任务)，就无需再去完成。可以理解为跳过或遇到错误。
+| 符号 | 说明 |
+| ---- | ---- |
+| ✔ | 本次程序运行，成功的执行了代码，并完成了任务(例如，分享视频，今日未分享过，那么程序就应该请求分享视频的接口，协助完成分享视频的任务)。 |
+| ❌ | 可能两种操作会出现这个符号。1.程序成功的执行了，尝试去完成任务，但是中途遇到了未知的失败。2.程序成功的执行了，检测到此类任务已经完成(例如，分享视频，今日已经分享过，那么程序不应该请求分享视频的接口，无需协助完成分享视频的任务)，就无需再去完成。可以理解为跳过或遇到错误。 |
 
 ## Github Actions 部署方法
 
@@ -87,11 +87,11 @@
 
 在`Secrets`中的`Name`和`Value`格式如下：
 
-Name | Value
--|-
-BILI_JCT | xxxxx
-DEDEUSERID | xxxxx
-SESSDATA | xxxxx
+| Name | Value |
+| ---- | ---- |
+| BILI_JCT | xxxxx |
+| DEDEUSERID | xxxxx |
+| SESSDATA | xxxxx |
 
 将上一步获取的参数，填入到Secrets中，一共需要添加三个键值对。
 
@@ -126,16 +126,17 @@ SESSDATA | xxxxx
 程序检测到礼物有效期还剩`1`天，将会自动随机送出，部分朋友包裹里可能会有贵重礼物，你可以手动关闭即将过期礼物送出功能。
 需要在`config.yml`中，将`gift`项设置为`false`。详情见下方[配置文件说明](#配置文件说明)。
 
-符号 | 说明
--|-
-coin | 代表投币的数量 [0,5]
-gift | 是否需要送出即将过期礼物 [true,false]
-s2c | 是否需要将银瓜子兑换硬币 [true,false]
-autoBiCoin | 月底自动使用B币卷 [{0,自己有其他用途},{1,给自己充电},{2,兑换成金瓜子}]
-platform | 用户设备的标识[android,ios]
-upList | up 主列表,优先给这些 up 主投币[uid]
-manga | 是否自动进行漫画签到 [true,false]
-upLive | 即将过期礼物给此up的直播间,填写其 uid
+| 符号 | 说明 |
+| ---- | ---- |
+| coin | 代表投币的数量 [0,5] |
+| gift | 是否需要送出即将过期礼物 [true,false] |
+| s2c | 是否需要将银瓜子兑换硬币 [true,false] |
+| autoBiCoin | 月底自动使用B币卷 [{0,自己有其他用途},{1,给自己充电},{2,兑换成金瓜子}] |
+| platform | 用户设备的标识[android,ios] |
+| upList | up 主列表,优先给这些 up 主投币[uid] |
+| manga | 是否自动进行漫画签到 [true,false] |
+| upLive | 即将过期礼物给此up的直播间,填写其 uid |
+| selectLike | 对于进行投币的视频选择是否点赞 , 默认不点赞 [0,1] |
 selectLike | 对于进行投币的视频选择是否点赞 , 默认不点赞 [0,1]
 
 ```yml
@@ -187,9 +188,9 @@ docker run -d \
 
 在`Secrets`中的`Name`和`Value`格式如下：
 
-Name | Value
--|-
-SCKEY | xxxxx
+| Name | Value |
+| ---- | ---- |
+| SCKEY | xxxxx |
 
 这样就可以在微信接收到运行结果了。
 
@@ -217,9 +218,9 @@ SENDKEY | xxxxx
 
 在`Secrets`中的`Name`和`Value`格式如下：
 
-Name | Value
--|-
-PUSHPLUSTK | xxxxx
+| Name | Value |
+| ---- | ---- |
+| PUSHPLUSTK | xxxxx |
 
 ### 3.推送运行结果到钉钉
 
@@ -229,9 +230,9 @@ PUSHPLUSTK | xxxxx
 
 键值对如下格式:
 
-Name | Value
--|-
-DINGTALK | `https://oapi.dingtalk.com/robot/send?access_token=064559acaa666c43d5ba197656594f288f3acef9a64f4f43218beddd1c7b7050`
+| Name | Value |
+| ---- | ---- |
+| DINGTALK | `https://oapi.dingtalk.com/robot/send?access_token=064559acaa666c43d5ba197656594f288f3acef9a64f4f43218beddd1c7b7050` |
 
 ![获取钉钉Webhook](img/获取钉钉Webhook.gif)
 
