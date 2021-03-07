@@ -150,10 +150,12 @@ public class BiliStart {
             USER_DATA.setVipStatus(object.getString("vipStatus"));
             /* 钱包B币卷余额 */
             USER_DATA.setCouponBalance(object.getJSONObject("wallet").getIntValue("coupon_balance"));
-            /* 升级到下一级所需要的经验 */
-            USER_DATA.setNextExp(levelInfo.getIntValue("next_exp"));
             /* 获取当前的等级 */
             USER_DATA.setCurrentLevel(levelInfo.getIntValue("current_level"));
+            if (USER_DATA.getCurrentLevel() < 6) {
+                /* 升级到下一级所需要的经验 */
+                USER_DATA.setNextExp(levelInfo.getIntValue("next_exp"));
+            }
             return true;
         }
         if(NOT_LOGGED_IN.equals(code)){

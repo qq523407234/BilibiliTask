@@ -52,6 +52,6 @@ public class UserData {
     /** 当前等级 */
     private Integer currentLevel;
     /** 距离升级到下一级所需要的经验 */
-    private Integer nextExp;
+    private Integer nextExp = 0;
 
 }
